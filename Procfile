@@ -1,1 +1,1 @@
-worker: python 초대.py
+worker: python invite.py
