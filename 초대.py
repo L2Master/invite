@@ -1,4 +1,5 @@
 import discord
+imfort os
 
 
 client = discord.Client()
@@ -13,4 +14,5 @@ async def on_message(message):
     if message.content.startswith("초대"):
         await message.channel.send("https://discord.gg/VDQMR8e")
 
-client.run("Nzc0NDc0NjgxNTcwNjg5MDQ0.X6YTwQ.-DJ-3DIB9oEhFTKQxtCsC-iC8FE")
+access_token = os.environ["BOT_TOKEN"]
+client.run("access_token")
