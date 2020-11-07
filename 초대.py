@@ -8,6 +8,8 @@ client = discord.Client()
 async def on_ready():
     print(client.user.id)
     print("ready")
+    game = discord.Game("초대코드생성")
+    await client.change_presence(status=discord.Status.online, activity=game)
 
 @client.event
 async def on_message(message):
